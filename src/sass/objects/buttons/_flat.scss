@@ -1,0 +1,49 @@
+.btn-flat {
+  position: relative;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  line-height: 1;
+  font-family: $btn-family;
+  font-size: $btn-flat-font-size;
+  cursor: pointer;
+  outline: none;
+  transition: color .15s ease-in-out;
+
+  @include padding(1);
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &.blue {
+    color: $blue;
+
+    &:hover {
+      color: $blue-dark;
+    }
+
+    &:focus {
+      border-bottom-color: $blue;
+    }
+  }
+
+  &.orange {
+    color: $orange;
+
+    &:hover {
+      color: $orange-dark;
+    }
+
+    &:focus {
+      border-bottom-color: $orange;
+    }
+  }
+  &.smoke,
+  &.disabled,
+  &:disabled {
+    color: $smoke;
+    cursor: not-allowed;
+  }
+}

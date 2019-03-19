@@ -1,0 +1,7 @@
+@mixin linear-gradient($direction, $color-stops...) {
+  background: linear-gradient($direction, $color-stops);
+}
+
+@mixin gradientDefault($opacity: 1, $direction: to bottom right) {
+  background: linear-gradient($direction, rgba($brandColorDegrade1, $opacity), rgba($brandColorDegrade2, $opacity));
+}
