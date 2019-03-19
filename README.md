@@ -32,7 +32,6 @@ Abra o arquivo index.html para ver exemplos de funcionamento.
 ### Airbnb Styleguide?
 
 #### referências:
-<<<<<<< HEAD
 - https://medium.com/tableless/arquitetura-css-d344fb01dd18
 - https://en.bem.info/
 - http://getbem.com/
