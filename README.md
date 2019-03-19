@@ -32,6 +32,7 @@ Abra o arquivo index.html para ver exemplos de funcionamento.
 ### Airbnb Styleguide?
 
 #### referências:
+<<<<<<< HEAD
 - https://medium.com/tableless/arquitetura-css-d344fb01dd18
 - https://en.bem.info/
 - http://getbem.com/
@@ -46,3 +47,19 @@ Abra o arquivo index.html para ver exemplos de funcionamento.
 - http://tableless.com.br/bem-um-novo-metodo-para-seu-css/
 - http://tableless.com.br/o-que-e-design-atomic/
 - https://tableless.com.br/afinal-como-usar-heranca-no-css/
+=======
+https://medium.com/tableless/arquitetura-css-d344fb01dd18
+https://en.bem.info/
+http://getbem.com/
+https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+https://willianjusten.com.br/organizando-seu-css-com-itcss/
+https://www.mundipagg.com/blog/bemit-uma-solucao-para-css/
+https://medium.com/tableless/elevando-seu-n%C3%ADvel-no-css-b2acbb220248
+http://opensource.locaweb.com.br/locawebstyle/
+https://medium.com/tableless/8-regras-simples-para-uma-arquitetura-css-robusta-e-escal%C3%A1vel-545c6dade170
+http://tableless.com.br/oocss-smacss-bem-dry-css-afinal-como-escrever-css/
+https://tableless.com.br/arquitetura-css-anotacoes-da-palestra-rafael-rinaldi/
+http://tableless.com.br/bem-um-novo-metodo-para-seu-css/
+http://tableless.com.br/o-que-e-design-atomic/
+https://tableless.com.br/afinal-como-usar-heranca-no-css/
+>>>>>>> c5b4fcac7550f2cb775eb9a8acd5ac93a2d97776
