@@ -1,0 +1,29 @@
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid $dark-snow;
+  border-bottom: 1px solid $dark-snow;
+  background-color: $white;
+  font-size: 1.4rem;
+
+  @include margin(1, 0);
+}
+
+dt,
+dd {
+  margin: 0;
+  border-bottom: 1px solid $dark-snow;
+  flex: 1 0 50%;
+  box-sizing: border-box;
+
+  @include padding(1);
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+dt {
+  background-color: $snow;
+}

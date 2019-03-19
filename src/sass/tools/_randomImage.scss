@@ -1,0 +1,6 @@
+@function random-image($rand, $list) {
+  $imgKey: random($rand);
+  $name: nth($list, $imgKey);
+
+  @return $name;
+}

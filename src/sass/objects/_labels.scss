@@ -1,0 +1,17 @@
+.label {
+  line-height: inherit;
+  color: $smoke;
+  font-weight: normal;
+
+  &.is-large {
+    font-size: 1.6rem;
+  }
+
+  &.is-medium {
+    font-size: 1.4rem;
+  }
+
+  &.is-small {
+    font-size: 1.2rem;
+  }
+}

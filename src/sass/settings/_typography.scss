@@ -1,0 +1,36 @@
+/**
+    FONT-SIZE
+**/
+
+// Respectivamente: 12pt, 14pt, 16pt, 18px e 24pt
+$font-nano: 1rem;
+$font-micro: 1.2rem;
+$font-mini: 1.4rem;
+$font-tiny: 1.6rem;
+$font-small: 1.8rem;
+$font-medium: 2.1rem;
+$font-large: 2.4rem;
+$font-Xlarge: 3.2rem;
+
+/**
+    FONT-COLOR
+**/
+$title-color-primary: $black;
+$title-color-second: $dark-smoke;
+$text-color-primary: $black;
+$text-color-second: $dark-smoke;
+$text-color-third: $smoke;
+
+/**
+    FONT-FAMILY
+**/
+$title-family: 'PT Sans Caption', sans-serif;
+$text-family: 'PT Sans', sans-serif;
+
+/**
+    FONT-WEIGHT
+**/
+$font-bold: 700;
+$font-regular: 400;
+$title-weight: bold;
+$text-weight: normal;

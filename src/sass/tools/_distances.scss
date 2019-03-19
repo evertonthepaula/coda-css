@@ -1,0 +1,17 @@
+//Padding mixin
+@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+  padding: calcDistance($top) calcDistance($right) calcDistance($bottom) calcDistance($left);
+}
+
+//Margin mixin
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+  margin: calcDistance($top) calcDistance($right) calcDistance($bottom) calcDistance($left);
+}
+
+@function calcDistance($distance) {
+  @if $distance == null or $distance == 0 {
+    @return $distance;
+  }
+
+  @return $distance * $distanceBase;
+}

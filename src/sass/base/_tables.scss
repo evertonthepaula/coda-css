@@ -1,0 +1,19 @@
+table {
+  font-size: 1.4rem;
+  color: $black;
+}
+
+th,
+td {
+  height: 32px;
+  line-height: inherit;
+  color: $smoke;
+  font-weight: normal;
+  font-size: 1.2rem;
+  border-top: 1px solid $dark-snow;
+  white-space: nowrap;
+  text-align: justify;
+  vertical-align: middle;
+
+  @include padding(1);
+}
