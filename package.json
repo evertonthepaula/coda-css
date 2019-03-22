@@ -20,8 +20,9 @@
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-stylelint": "^8.0.0",
+    "node-sass": "^4.11.0",
     "stylelint": "^9.10.1",
     "stylelint-config-airbnb": "0.0.0",
     "stylelint-order": "^2.1.0"
