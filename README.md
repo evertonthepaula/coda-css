@@ -23,7 +23,20 @@ npm install && gulp sass-min && gulp images
 
 Abra o arquivo index.html para ver exemplos de funcionamento.
 
-### O que é ITCSS?
+### Como utilizamos ITCSS?
+**Settings:** Configurações de variáveis e só.
+
+**Tools:** Ferramentas como mixins.
+
+**Generic:** Pouco utilizado por nós no momento, basicamente onde colocamos alguns resets e "normalize".
+
+**Base:** Utilizamos para setar o default de estilo do desing system, pois se todo input tem uma borda 1px solid #000, não precisa criar uma classe .input para definir algo que deveria ser default. Aqui nós definimos tudo o que é html puro.
+
+**Objects:** Definem o comportamento dos "átomos", estes componentes estão na fila para se tornarem web components, mas podem ser utilizados em projetos que não possuem este recurso. Apesar de terem o estilo fechado em seu escopo, Objects herdam características de Base. Aqui também ficam manipulação de estados, por exemplo a classe .btn tem seu estado default, a classe .btn .blue, tem seu estado alterado e definido dentro do component BTN.
+
+**Components:** Manipulação de objetos de layout, digamos que vc precise criar um alinhamento para uma pagina especifica, apesar de tentarmos não utilizar este diretório as vezes ele se faz necessário, principalmente quando vamos manipular nossas classes juntamente com classes de apps legados, ou para manipular comportamentos definidos em Base, por exemplo o input search terá borda verde de 2 px em determinado contexto. Aqui nós utilizamos apenas classes css. Apesar de necessário é pouco utilizado pois priorizamos modificar estilo de elementos a partir de mudança do estado do mesmo, como vimos em Objects.
+
+**Trumps:** Não utilizamos.
 
 ### O que é BEM?
 
