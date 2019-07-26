@@ -8,6 +8,20 @@
 // Using flexbox for the grid, inspired by Philip Walton:
 // http://philipwalton.github.io/solved-by-flexbox/demos/grids/
 
+.container {
+  display: block;
+  width: 100%;
+  max-width: $max-template-width;
+  margin: 0 auto;
+
+  &.wrapper {
+    max-width: 1832px;
+    clear: both;
+    border-radius: 10px;
+    box-sizing: border-box;
+  } 
+}
+
 .grid-flex {
   display: flex;
   flex-direction: column;
