@@ -12,6 +12,7 @@
   color: $brandColor;
 
   @include padding(1);
+  
   @include margin(1);
 
   &:hover {

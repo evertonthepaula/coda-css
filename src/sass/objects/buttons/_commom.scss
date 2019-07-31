@@ -12,6 +12,9 @@
   color: $smoke;
   cursor: pointer;
   transition: background-color .15s ease-in-out, border-color 15s ease-in-out;
+  text-decoration: none;
+
+  @include padding(1);
 
   @include margin(0, .5);
 
