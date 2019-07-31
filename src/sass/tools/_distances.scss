@@ -1,11 +1,13 @@
 //Padding mixin
 @mixin padding($top: null, $right: null, $bottom: null, $left: null) {
-  padding: calcDistance($top) calcDistance($right) calcDistance($bottom) calcDistance($left);
+  padding: calcDistance($top) calcDistance($right) calcDistance($bottom)
+    calcDistance($left);
 }
 
 //Margin mixin
 @mixin margin($top: null, $right: null, $bottom: null, $left: null) {
-  margin: calcDistance($top) calcDistance($right) calcDistance($bottom) calcDistance($left);
+  margin: calcDistance($top) calcDistance($right) calcDistance($bottom)
+    calcDistance($left);
 }
 
 @function calcDistance($distance) {

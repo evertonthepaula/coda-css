@@ -4,7 +4,7 @@
   "description": "componentes intranet Objective",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fix-styles": "stylelint 'src/sass/**/*.scss' --fix"
   },
   "author": "",
   "license": "ISC",
@@ -23,8 +23,12 @@
     "gulp-sass": "^4.0.2",
     "gulp-stylelint": "^8.0.0",
     "node-sass": "^4.11.0",
+    "prettier": "^1.18.2",
     "stylelint": "^9.10.1",
     "stylelint-config-airbnb": "0.0.0",
-    "stylelint-order": "^2.1.0"
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^2.1.0",
+    "stylelint-prettier": "^1.1.1"
   }
 }

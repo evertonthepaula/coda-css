@@ -1,22 +1,22 @@
 .btn {
-  min-height: $btn-height;
   display: inline-flex;
   align-items: center;
+  min-height: $btn-height;
+  color: $smoke;
+  font-size: $btn-font-size;
+  font-family: $btn-family;
+  text-decoration: none;
   background-color: $snow;
   border-color: $dark-snow;
   border-style: solid;
   border-width: 1px;
   border-radius: $border-radius;
-  font-family: $btn-family;
-  font-size: $btn-font-size;
-  color: $smoke;
   cursor: pointer;
-  transition: background-color .15s ease-in-out, border-color 15s ease-in-out;
-  text-decoration: none;
+  transition: background-color 0.15s ease-in-out, border-color 15s ease-in-out;
 
   @include padding(1);
 
-  @include margin(0, .5);
+  @include margin(0, 0.5);
 
   &:hover {
     background-color: $dark-snow;
@@ -27,9 +27,9 @@
   }
 
   &.white {
-    border: $btn-border-width solid $btn-border-color;
-    background-color: $white;
     color: $smoke;
+    background-color: $white;
+    border: $btn-border-width solid $btn-border-color;
 
     &:hover {
       background-color: $dark-snow;
@@ -41,9 +41,9 @@
   }
 
   &.blue {
+    color: $white;
     background-color: $blue;
     border-color: $blue;
-    color: $white;
 
     &:hover {
       background-color: $blue-dark;
@@ -56,9 +56,9 @@
   }
 
   &.orange {
+    color: $white;
     background-color: $orange;
     border-color: $orange;
-    color: $white;
 
     &:hover {
       background-color: $orange-dark;
@@ -72,18 +72,18 @@
 
   &.disabled,
   &:disabled {
-    border-color: $dark-snow;
-    background-color: $snow;
-    opacity: 400ms;
     color: $smoke;
+    background-color: $snow;
+    border-color: $dark-snow;
     cursor: not-allowed;
+    opacity: 400ms;
 
     &:hover {
-      border-color: $dark-snow;
-      background-color: $snow;
-      opacity: 400ms;
       color: $smoke;
+      background-color: $snow;
+      border-color: $dark-snow;
       cursor: not-allowed;
+      opacity: 400ms;
     }
   }
 }

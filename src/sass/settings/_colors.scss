@@ -1,51 +1,50 @@
 /*--------------------------------------------------
                 Objective Design system - colors
 ----------------------------------------------------*/
-$black:#000000;
-$dark-smoke:#555555;
-$smoke:#8e8e8e;
-$dark-snow:#e5e5e5;
-$snow:#f5f5f5;
-$white: #FFFFFF;
+$black: #000000;
+$dark-smoke: #555555;
+$smoke: #8e8e8e;
+$dark-snow: #e5e5e5;
+$snow: #f5f5f5;
+$white: #ffffff;
 
-$red:#e72915;
-$red-dark:#aa0000;
-$red-light:#ffa39a;
+$red: #e72915;
+$red-dark: #aa0000;
+$red-light: #ffa39a;
 
-$pink:#ee3771;
-$pink-dark:#be175e;
-$pink-light:#f290b1;
+$pink: #ee3771;
+$pink-dark: #be175e;
+$pink-light: #f290b1;
 
-$purple:#c464db;
-$purple-dark:#962eaa;
-$purple-light:#cd95d7;
+$purple: #c464db;
+$purple-dark: #962eaa;
+$purple-light: #cd95d7;
 
-$blue:#5dafff;
-$blue-dark:#167abc;
-$blue-light:#b5e5fb;
+$blue: #5dafff;
+$blue-dark: #167abc;
+$blue-light: #b5e5fb;
 
-$green:#53b873;
-$green-dark:#15955a;
-$green-light:#9dcb6a;
+$green: #53b873;
+$green-dark: #15955a;
+$green-light: #9dcb6a;
 
-$yellow:#ffcf0f;
-$yellow-dark:#e2ae33;
-$yellow-light:#fce196;
+$yellow: #ffcf0f;
+$yellow-dark: #e2ae33;
+$yellow-light: #fce196;
 
-$orange:#fa6a01;
-$orange-dark:#e64e29;
-$orange-light:#ffb25d;
-
+$orange: #fa6a01;
+$orange-dark: #e64e29;
+$orange-light: #ffb25d;
 
 /*--------------------------------------------------
                 Dark Shades colors
 ----------------------------------------------------*/
 $dark-shades: (
-    red: $red-dark,
-    pink: $pink-dark,
-    purple: $purple-dark,
-    blue: $blue-dark,
-    green: $green-dark,
-    yellow: $yellow-dark,
-    orange: $orange-dark
+  red: $red-dark,
+  pink: $pink-dark,
+  purple: $purple-dark,
+  blue: $blue-dark,
+  green: $green-dark,
+  yellow: $yellow-dark,
+  orange: $orange-dark
 );

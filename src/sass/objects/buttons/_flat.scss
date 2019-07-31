@@ -1,14 +1,14 @@
 .btn-flat {
   position: relative;
+  font-size: $btn-flat-font-size;
+  font-family: $btn-family;
+  line-height: 1;
   background: none;
   border: 0;
   border-bottom: 1px solid transparent;
-  line-height: 1;
-  font-family: $btn-family;
-  font-size: $btn-flat-font-size;
-  cursor: pointer;
   outline: none;
-  transition: color .15s ease-in-out;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
 
   @include padding(1);
 

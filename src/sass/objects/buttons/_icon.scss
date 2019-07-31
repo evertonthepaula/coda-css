@@ -1,18 +1,18 @@
 .btn-icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $brandColor;
+  font-size: $icon-small;
   background: none;
   border: 0;
   border-radius: $border-radius;
   cursor: pointer;
-  font-size: $icon-small;
-  transition: background-color .15s ease-in-out;
-  color: $brandColor;
+  transition: background-color 0.15s ease-in-out;
 
   @include padding(1);
-  
+
   @include margin(1);
 
   &:hover {

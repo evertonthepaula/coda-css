@@ -1,10 +1,10 @@
 a {
-  line-height: $link-height;
-  font-size: $link-font-size;
   color: $link-blue;
+  font-size: $link-font-size;
+  line-height: $link-height;
+  white-space: nowrap;
   text-transform: uppercase;
   text-overflow: ellipsis;
-  white-space: nowrap;
 
   &:hover {
     color: $link-blue-hover;

@@ -5,13 +5,13 @@
 }
 
 [type="checkbox"] + label {
-  display: block;
   position: relative;
-  padding-left: 24px;
-  font-size: 1.4rem;
-  color: $black;
-  cursor: pointer;
+  display: block;
   padding-bottom: 1px;
+  padding-left: 24px;
+  color: $black;
+  font-size: 1.4rem;
+  cursor: pointer;
 
   &:focus {
     outline: 1px solid $blue;
@@ -24,35 +24,35 @@
 
 [type="checkbox"]:checked + label:before,
 [type="checkbox"]:not(:checked) + label:before {
-  content: "";
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 16px;
   height: 16px;
-  border-radius: 4px;
-  border: 1px solid $dark-snow;
   background: $snow;
+  border: 1px solid $dark-snow;
+  border-radius: 4px;
+  content: "";
 }
 
 [type="checkbox"]:checked + label:after,
 [type="checkbox"]:not(:checked) + label:after {
-  content: "";
-  width: 8px;
-  height: 6px;
-  background: transparent;
   position: absolute;
   top: 4px;
   left: 4px;
+  width: 8px;
+  height: 6px;
+  background: transparent;
   border-bottom: 2px solid $black;
   border-left: 2px solid $black;
   transition: all 200ms ease;
+  content: "";
 }
 [type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
   transform: scale(0) rotate(0);
+  opacity: 0;
 }
 [type="checkbox"]:checked + label:after {
-  opacity: 1;
   transform: scale(1) rotate(-45deg);
+  opacity: 1;
 }

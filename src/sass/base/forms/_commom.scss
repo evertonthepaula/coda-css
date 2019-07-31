@@ -1,48 +1,47 @@
-input[type=text],
-input[type=email],
-input[type=time],
-input[type=password],
-input[type=number],
+input[type="text"],
+input[type="email"],
+input[type="time"],
+input[type="password"],
+input[type="number"],
 select,
 .field {
-    display: block;
-    width: 100%;
-    height: 32px;
-    line-height: 32px;
-    @include padding(0,1);
-    margin-bottom:1.6rem;
-    box-sizing: border-box;
-    border-radius: $border-radius;
-    background-color: $white;
-    border: 1px solid $dark-snow;
-    font-size: $font-tiny;
-    color: $black;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 1.6rem;
+  color: $black;
+  font-size: $font-tiny;
+  line-height: 32px;
+  background-color: $white;
+  border: 1px solid $dark-snow;
+  border-radius: $border-radius;
+  @include padding(0, 1);
 
-    &:focus {
-        outline-color: $blue;
-        border-color: $blue;
-    }
-    &:disabled
-    ,.disabled {
-        background-color: $snow;
-        border-color: $dark-snow;
-        color: $smoke;
-        cursor: not-allowed;
-    }
+  &:focus {
+    border-color: $blue;
+    outline-color: $blue;
+  }
+  &:disabled,
+  .disabled {
+    color: $smoke;
+    background-color: $snow;
+    border-color: $dark-snow;
+    cursor: not-allowed;
+  }
 }
 
 select[multiple] {
-    height: auto;
+  height: auto;
 }
 
 label,
 .label {
-    margin-bottom: 8px;
-    font-size: $font-mini;
-    color: $smoke;
+  margin-bottom: 8px;
+  color: $smoke;
+  font-size: $font-mini;
 }
 
 textarea,
-.text_box{
-
+.text_box {
 }

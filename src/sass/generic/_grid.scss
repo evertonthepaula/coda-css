@@ -15,10 +15,10 @@
   margin: 0 auto;
 
   &.wrapper {
-    max-width: 1832px;
     clear: both;
-    border-radius: 10px;
     box-sizing: border-box;
+    max-width: 1832px;
+    border-radius: 10px;
   }
 }
 
@@ -190,9 +190,9 @@
     margin-left: -1rem;
 
     .column {
+      flex: 0 0 100%;
       margin-bottom: inherit;
       padding: 0 1rem;
-      flex: 0 0 100%;
     }
   }
 }

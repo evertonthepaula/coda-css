@@ -1,6 +1,8 @@
 {
-  "extends": "stylelint-config-airbnb",
+  "plugins": ["stylelint-prettier"],
   "rules": {
+    "prettier/prettier": true,
     "max-nesting-depth": 6
-  }
+  },
+  "extends": ["stylelint-config-airbnb", "stylelint-config-rational-order","stylelint-config-prettier"]
 }

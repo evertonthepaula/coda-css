@@ -3,19 +3,18 @@
   align-items: center;
   max-width: 136px;
   height: 24px;
+  overflow: hidden;
+  color: $white;
+  font-size: $font-micro;
+  text-overflow: ellipsis;
   background: $dark-smoke;
   border-radius: $border-radius;
-  font-size: $font-micro;
-  color: $white;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   @include margin(0, 1);
 
-  @include padding(.5, 1);
+  @include padding(0.5, 1);
 
   @each $color-name, $color-value in $dark-shades {
-
     &.#{$color-name} {
       background: $color-value;
     }
@@ -25,4 +24,3 @@
     margin-left: 8px;
   }
 }
-

@@ -1,11 +1,9 @@
 .dropdown {
-
   &-menu {
     background-color: $white;
   }
 
   &-item {
-
     &:active,
     &.active {
       background-color: $brandColor;
@@ -19,8 +17,8 @@
 
     &:focus,
     &:hover {
-      background-color: $smoke;
       color: $brandColor;
+      background-color: $smoke;
     }
   }
 }

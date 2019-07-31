@@ -5,12 +5,12 @@
 }
 
 [type="radio"] + label {
-  display: block;
   position: relative;
+  display: block;
+  padding-bottom: 1px;
   padding-left: 24px;
   color: $black;
   cursor: pointer;
-  padding-bottom: 1px;
 
   &:focus {
     outline: 1px solid $blue;
@@ -23,39 +23,39 @@
 
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
-  content: "";
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 16px;
   height: 16px;
+  background: $snow;
   border: 1px solid $dark-snow;
   border-radius: 100%;
-  background: $snow;
+  content: "";
 }
 
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: $black;
   position: absolute;
   top: 5px;
   left: 5px;
+  width: 8px;
+  height: 8px;
+  background: $black;
   border-radius: 100%;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
+  content: "";
 }
 
 [type="radio"]:not(:checked) + label:after {
-  opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
+  opacity: 0;
 }
 
 [type="radio"]:checked + label:after {
-  opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+  opacity: 1;
 }

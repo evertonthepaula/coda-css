@@ -1,71 +1,71 @@
 html {
-  font-family: $text-family;
   font-size: 62.5%;
+  font-family: $text-family;
 }
 
 body {
-  font-family: $text-family;
   font-size: 100%;
+  font-family: $text-family;
 }
 
 h1,
 .title {
   display: inline-block;
   max-width: 100%;
-  font-family: $title-family;
-  font-size: $font-Xlarge;
-  color: $title-color-primary;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  color: $title-color-primary;
+  font-size: $font-Xlarge;
+  font-family: $title-family;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 h2,
 .subtitle {
   display: block;
-  max-width: 100%;
   width: 100%;
-  font-family: $title-family;
-  font-size: $font-large;
-  color: $title-color-primary;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-weight: bold;
+  max-width: 100%;
   overflow: hidden;
+  color: $title-color-primary;
+  font-weight: bold;
+  font-size: $font-large;
+  font-family: $title-family;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 h3,
 .title-medium {
   display: block;
-  max-width: 100%;
   width: 100%;
-  font-family: $title-family;
-  font-size: $font-medium;
-  color: $title-color-primary;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  max-width: 100%;
   overflow: hidden;
+  color: $title-color-primary;
+  font-size: $font-medium;
+  font-family: $title-family;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 h4,
 .title-small {
   display: block;
-  max-width: 100%;
   width: 100%;
-  font-family: $title-family;
-  font-size: $font-small;
-  color: $title-color-primary;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  max-width: 100%;
   overflow: hidden;
+  color: $title-color-primary;
+  font-size: $font-small;
+  font-family: $title-family;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 p,
 .text {
   display: block;
   width: 100%;
-  font-size: $font-mini;
   color: $text-color-primary;
+  font-size: $font-mini;
 }
 
 small {
