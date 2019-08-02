@@ -22,17 +22,20 @@
   }
 }
 
-.grid-flex {
+.grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 0;
 
   &.-no-padding {
     padding: 0;
 
-    & > .column {
+    & > .flex {
       padding: 0;
     }
   }
@@ -62,8 +65,8 @@
     align-items: baseline;
   }
 
-  .column {
-    display: block;
+  .flex {
+    display: flex;
     // IE 11 required specifying the flex-basis otherwise it breaks mobile
     flex: 1 1 auto;
     box-sizing: border-box;
@@ -112,84 +115,84 @@
     // By default each grid column will evenly distribute
     // across the grid. However, you can specify individual
     // columns to take up a certain size of the available area
-    &.column-10 {
+    &.f-10 {
       flex: 1 0 10%;
       max-width: 10%;
     }
 
-    &.column-20 {
+    &.f-20 {
       flex: 1 0 20%;
       max-width: 20%;
     }
 
-    &.column-25 {
+    &.f-25 {
       flex: 1 0 25%;
       max-width: 25%;
     }
 
-    &.column-33,
-    &.column-34 {
+    &.f-33,
+    &.f-34 {
       flex: 1 0 33.3333%;
       max-width: 33.3333%;
     }
 
-    &.column-40 {
+    &.f-40 {
       flex: 1 0 40%;
       max-width: 40%;
     }
 
-    &.column-50 {
+    &.f-50 {
       flex: 1 0 50%;
       max-width: 50%;
     }
 
-    &.column-60 {
+    &.f-60 {
       flex: 1 0 60%;
       max-width: 60%;
     }
 
-    &.column-66,
-    &.column-67 {
+    &.f-66,
+    &.f-67 {
       flex: 1 0 66.6666%;
       max-width: 66.6666%;
     }
 
-    &.column-75 {
+    &.f-75 {
       flex: 1 0 75%;
       max-width: 75%;
     }
 
-    &.column-80 {
+    &.f-80 {
       flex: 1 0 80%;
       max-width: 80%;
     }
 
-    &.column-90 {
+    &.f-90 {
       flex: 1 0 90%;
       max-width: 90%;
     }
     // .column-* vertically aligns an individual .column
-    &.column-top {
+    &.align-top {
       align-self: flex-start;
     }
 
-    &.column-bottom {
+    &.align-bottom {
       align-self: flex-end;
     }
 
-    &.column-center {
+    &.align-center {
       align-self: center;
     }
   }
 }
 
 @media (max-width: 40rem) {
-  .grid-flex {
+  .grid {
     flex-direction: column;
     width: calc(100% + 2rem);
     margin-left: -1rem;
 
-    .column {
+    .flex {
       flex: 0 0 100%;
       margin-bottom: inherit;
       padding: 0 1rem;
