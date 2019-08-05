@@ -1,0 +1,16 @@
+@mixin icon-css($content: false) {
+  display: block;
+  font-weight: normal !important;
+  font-family: "icon-font-family" !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  line-height: 1;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @if $content {
+    content: "#{$content}";
+  }
+}
