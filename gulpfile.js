@@ -2,6 +2,7 @@ const gulp = require('gulp'),
   sass = require('gulp-sass'),
   clean = require('gulp-clean'),
   concat = require('gulp-concat'),
+  connect = require('gulp-connect'),
   imagemin = require('gulp-imagemin'),
   sourcemaps = require('gulp-sourcemaps'),
   gulpStylelint = require('gulp-stylelint'),
@@ -90,9 +91,15 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest(FONTS_PATH_DIST));
 });
 
+gulp.task('server', function() {
+  connect.server({
+    index: './examples/index.html'
+  });
+});
+
 gulp.task('images', () => {
-  gulp.src(SASS_PATH_SRC + '/img/**/*')
+  gulp.src('./src/img/**/*')
     .pipe(imagemin({ verbose: true }))
-    .pipe(gulp.dest(SASS_PATH_DIST + '/img/'))
+    .pipe(gulp.dest('./dist/img/'))
 });
 
