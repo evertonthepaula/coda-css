@@ -1,0 +1,26 @@
+@mixin sizeW($ratio) {
+  width: calcSize($ratio);
+}
+
+@mixin sizeH($ratio) {
+  height: calcSize($ratio);
+}
+
+@mixin square($ratio) {
+  width: calcSize($ratio);
+  height: calcSize($ratio);
+}
+
+@mixin rounded($ratio) {
+  width: calcSize($ratio);
+  height: calcSize($ratio);
+  border-radius: 100%;
+}
+
+@function calcSize($ratio) {
+  @if $ratio == null or $ratio == 0 {
+    @return $ratio;
+  }
+
+  @return $ratio * $default-size-base;
+}

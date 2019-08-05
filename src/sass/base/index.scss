@@ -1,9 +1,5 @@
-@import "_typography";
-
-@import "_links";
-
-@import "_images";
-
-@import "_tables";
-
-@import "./forms/_forms";
+@import "./forms/forms";
+@import "typography";
+@import "links";
+@import "images";
+@import "tables";

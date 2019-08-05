@@ -23,29 +23,22 @@
 
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 16px;
   background: $snow;
   border: 1px solid $dark-snow;
-  border-radius: 100%;
-  content: "";
+  
+  @include pseudo();
+  @include rounded(2);
+  @include position(0, null, null, 0);
 }
 
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 8px;
-  height: 8px;
   background: $black;
-  border-radius: 100%;
-  -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  content: "";
+
+  @include pseudo();
+  @include position(0.5, null, null, 0.5);
+  @include rounded(1);
 }
 
 [type="radio"]:not(:checked) + label:after {

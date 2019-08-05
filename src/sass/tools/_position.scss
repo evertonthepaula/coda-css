@@ -1,0 +1,14 @@
+@mixin position($top: null, $right: null, $bottom: null, $left: null) {
+  top: calcPosition($top);
+  right: calcPosition($right);
+  bottom: calcPosition($bottom);
+  left: calcPosition($left);
+}
+
+@function calcPosition($ratio) {
+  @if $ratio == null or $ratio == 0 {
+    @return $ratio;
+  }
+
+  @return $ratio * $default-size-base;
+}
