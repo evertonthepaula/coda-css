@@ -175,13 +175,27 @@
     &.align-top {
       align-self: flex-start;
     }
-
     &.align-bottom {
       align-self: flex-end;
     }
-
     &.align-center {
       align-self: center;
+    }
+
+    &.justify-between {
+      justify-content: space-between;
+    }
+    &.justify-around {
+      justify-content: space-around;
+    }
+    &.justify-start {
+      justify-content: flex-start;
+    }
+    &.justify-end {
+      justify-content: flex-end;
+    }
+    &.justify-center {
+      justify-content: center;
     }
   }
 }
