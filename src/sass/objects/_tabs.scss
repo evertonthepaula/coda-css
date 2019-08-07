@@ -18,6 +18,14 @@
     @include padding(2);
   }
 
+  &-title {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    @include padding(0, 2);
+    @include truncate(100%);
+  }
+
   &-label {
     display: inline-block;
     box-sizing: border-box;
@@ -34,13 +42,6 @@
     transition: background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out;
 
-    & > span {
-      display: inline-block;
-      box-sizing: border-box;
-      height: 100%;
-      @include padding(0, 2);
-      @include truncate(100%);
-    }
     &:first-of-type {
       margin-left: 0;
     }
