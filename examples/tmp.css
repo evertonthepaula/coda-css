@@ -1,54 +1,52 @@
-img {
+.coda-logo {
   display: block;
   margin: 0 auto;
 }
 
-section {
-  background-color: #f8f8f8;
-  padding: 24px;
+.content {
   margin: 40px;
+  padding: 24px;
 }
 
-header {
-  background-color: #dcdcdc;
-  padding: 24px;
-  margin-bottom: 24px;
+.header {
   display: block;
-  width: 100%;
-  font-family: "PT Sans Caption", sans-serif;
-  font-size: 2.4rem;
-  color: #000;
   box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 24px;
+  color: #000;
+  font-size: 2.4rem;
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: #dcdcdc;
 }
 
 .coda {
-  font-size: 8rem;
-  letter-spacing: 0;
-  padding: 0;
   display: block;
   margin: 0 auto;
+  padding: 0;
+  font-size: 8rem;
+  letter-spacing: 0;
   text-align: center;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-  opacity: 1;
-  
   background: url(./dist/img/coda.png) repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 10s linear;
-  animation-fill-mode: forwards;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
+  opacity: 1;
+  -webkit-animation: aitf 10s linear;
+  animation-fill-mode: forwards;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes aitf {
   0% {
     background-position: 0% 50%;
   }
-  80%{
+  80% {
     background-position: 100% 50%;
   }
-  81%{
+  81% {
     background-position: 100% 50%;
     opacity: 0;
   }
