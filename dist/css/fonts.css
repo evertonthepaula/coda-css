@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'PT Sans';
+	font-style: italic;
+	font-weight: 400;
+	font-display: auto;
+	src: local('PT Sans Italic'), local('PTSans-Italic'), url(fonts/PT_Sans-italic-400.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: italic;
+	font-weight: 700;
+	font-display: auto;
+	src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(fonts/PT_Sans-italic-700.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: local('PT Sans'), local('PTSans-Regular'), url(fonts/PT_Sans-normal-400.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: local('PT Sans Bold'), local('PTSans-Bold'), url(fonts/PT_Sans-normal-700.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'PT Sans Caption';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: local('PT Sans Caption'), local('PTSans-Caption'), url(fonts/PT_Sans_Caption-normal-400.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'PT Sans Caption';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: local('PT Sans Caption Bold'), local('PTSans-CaptionBold'), url(fonts/PT_Sans_Caption-normal-700.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+

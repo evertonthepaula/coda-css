@@ -25,7 +25,7 @@
 [type="radio"]:not(:checked) + label:before {
   background: $snow;
   border: 1px solid $dark-snow;
-  
+
   @include pseudo();
   @include rounded(2);
   @include position(0, null, null, 0);

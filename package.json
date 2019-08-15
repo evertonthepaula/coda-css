@@ -1,7 +1,7 @@
 {
-  "name": "intranet",
+  "name": "objective-voda",
   "version": "1.0.0",
-  "description": "componentes intranet Objective",
+  "description": "Biblioteca de componenentes CSS",
   "main": "index.js",
   "scripts": {
     "fix-styles": "stylelint 'src/sass/**/*.scss' --fix",
@@ -15,7 +15,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "milligram": "^1.3.0",
     "modern-normalize": "^0.5.0",
-    "stylelint-scss": "^3.5.4"
+    "stylelint-scss": "^3.9.3"
   },
   "devDependencies": {
     "gulp-autoprefixer": "^5.0.0",
@@ -27,16 +27,16 @@
     "gulp-sass": "^4.0.2",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-stylelint": "^8.0.0",
-    "husky": "^3.0.2",
+    "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "run-sequence": "^2.2.1",
     "stylelint": "^9.10.1",
     "stylelint-config-airbnb": "0.0.0",
     "stylelint-config-prettier": "^5.2.0",
     "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-order": "^2.1.0",
+    "stylelint-order": "^2.2.1",
     "stylelint-prettier": "^1.1.1"
   },
   "husky": {
@@ -45,7 +45,7 @@
     }
   },
   "lint-staged": {
-    "*.css": [
+    "*.scss": [
       "npm run fix-styles",
       "git add"
     ]

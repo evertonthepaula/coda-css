@@ -1,23 +1,37 @@
-# CODA - css orientado a desing atômico 
-
-## CODA
+# CODA - css orientado a desing atômico
 
 "Em termos bem básicos, coda significa a seção com que se termina uma determinada música ou trecho musical. O termo veio do idioma italiano, que quer dizer cauda (em inglês, tail) . Então, você deve imaginar coda como uma seção relacionada à parte final da música ou determinado trecho musical.
 Não quer dizer que o símbolo indicando coda deve estar necessariamente no final da partitura. Isso porque pode ocorrer que a música finalize com alguma cadência lá no meio. Pode ser que a cadência ideal (ou desejável) para se finalizar a música esteja em outra parte que não seja o fim da partitura. Aí se usa o símbolo do coda para apontar isso claramente." - fonte: [ramontessmann.com.br](https://ramontessmann.com.br/coda/)
 
-Assim como CODA em uma música o css(em teoria) é a trecho final de um projeto, que é revisitados inumeras vezes até que tudo esteja alinhado e corrigido com a experiência do cliente. CODA literalmente é a cauda que aparece no fim do projeto, após todas as features relacionadas a regra de negócio estarem prontas, quando tudo o que é necessário são ajustes finos de layout, e cada vez mais finos até que chegamos ao fim da cauda. Assim como uma cauda sua implementação inicial pode ser de maior impacto, causando grandes mudanças de experiência, mas "tende" a diminuir conforme chegamos a entrega do produto.
+Assim como CODA em uma música o css(em teoria) é a trecho final de um projeto, que é revisitado inúmeras vezes até que tudo esteja alinhado e corrigido com a experiência do cliente. CODA literalmente é a cauda que aparece no fim do projeto, após todas as features relacionadas a regra de negócio estarem prontas, quando tudo o que é necessário são ajustes finos de layout, e cada vez mais finos até que chegamos ao fim da cauda. Assim como uma cauda sua implementação inicial pode ser de maior impacto, causando grandes mudanças de experiência, mas "tende" a diminuir conforme chegamos a entrega do produto.
 
-Deste modo CODA.css é uma proposta de biblioteca que implementa as definições do Desing System da Objective, este fortemente orietando pelo desing atômico, baseiando-se em modelos consolidados de escrita para "sass/css", sendo eles:
+## Como usar
+
+para baixar como dependencia do projeto use:
+
+```npm i -S git+ssh://git@gitlab.objective.com.br:everton.paula/coda-css.git```
+
+Carrege usando:
+
+```@import '/node_modules/objective-coda/src/sass/index.scss';```
+
+ou
+
+```@import '/node_modules/objective-coda/dist/css/main.css';```
+
+ou
+
+```@import '/node_modules/objective-coda/dist/css/main.min.css';```
+
+## Contribuindo com o projeto
+
+CODA é uma proposta de biblioteca que implementa as definições do Desing System da Objective, este fortemente orietando pelo desing atômico, baseiando-se em modelos consolidados de escrita para "sass/css", sendo eles:
 
 - [ITCSS - Arquitetura](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/),
 - [BEM - Convenção de nomes](https://en.bem.info/),
 - [SUITCSS - Convenção de nomes](http://suitcss.github.io/)
 - [Airbnb Styleguide](https://github.com/airbnb/css).
-
-Estes podem conter alterações e modicações, mas recomenda-se fortemente utilizar cada um deles como base.
-
-### Como usar
-
+    
 Clone o repositório instale as dependências e execute o gulp para ter acesso ao pacote final.
 
 ``npm install && gulp fonts && gulp sass-min``
@@ -46,7 +60,7 @@ Para ver exemplos de funcionamento execute ``npm server``
 
 ### Airbnb Styleguide
 
-#### referências
+## Referências
 
 - https://medium.com/tableless/arquitetura-css-d344fb01dd18
 - https://en.bem.info/
