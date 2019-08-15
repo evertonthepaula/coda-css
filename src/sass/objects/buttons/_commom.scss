@@ -12,7 +12,7 @@
   border-width: 1px;
   border-radius: $border-radius;
   cursor: pointer;
-  transition: background-color 0.15s ease-in-out, border-color 15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 
   @include padding(1);
 

@@ -7,16 +7,18 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="../dist/css/main.min.css">
   <link rel="stylesheet" href="./examples/tmp.css">
 </head>
+
 <body>
-  <img src="./examples/img/coda.png">
+  <img src="./examples/img/coda.png" class="coda-logo">
   <h1 class="coda">CODA</h1>
 
-  <section>
-    <header>Typography:</header>
+  <section class="content">
+    <header class="header">Typography:</header>
     <h1>Titulo - h1</h1>
     <h2>Titulo - h2</h2>
     <h3>Titulo - h3</h3>
@@ -25,8 +27,8 @@
     <small>small text</small>
   </section>
 
-  <section>
-    <header>Buttons:</header>
+  <section class="content">
+    <header class="header">Buttons:</header>
 
     <p>Native Buttons</p>
     <button>Button</button>
@@ -59,8 +61,8 @@
     <input class="btn disable" type="button" value="Input Button">
   </section>
 
-  <section>
-    <header>Buttons Flat:</header>
+  <section class="content">
+    <header class="header">Buttons Flat:</header>
     <p>Default Flat Buttons</p>
     <button class="btn-flat">Button</button>
     <input class="btn-flat" type="submit" Value="Input Submit">
@@ -87,9 +89,9 @@
     <input class="btn-flat disabled" type="button" Value="Input Button">
   </section>
 
-  <section>
-    <header>Buttons Icon:</header>
-    <p>Botões por default usam a cor da marca Objective:</p>
+  <section class="content">
+    <header class="header">Buttons Icon:</header>
+    <i>Botões por default usam a cor da marca Objective:</i>
 
     <p>Default Size</p>
     <button class="btn-icon"><i class="fas fa-mug-hot"></i></button>
@@ -120,16 +122,31 @@
     <button class="btn-icon smoke is-extraLarge"><i class="fas fa-mug-hot"></i></button>
   </section>
 
-  <section>
-    <header>Tags:</header>
-    <span class="tag">tag</span>
-    <span class="tag red">tag</span>
-    <span class="tag pink">tag</span>
-    <span class="tag purple">tag</span>
-    <span class="tag blue">tag</span>
-    <span class="tag green">tag</span>
-    <span class="tag yellow">tag</span>
-    <span class="tag orange">Um texto realmente muito longo</span>
+  <section class="content">
+    <header class="header">Buttons Hamburger:</header>
+
+    <div class="grid">
+      <div class="flex f-25">
+        <p>Menu closed - Default</p>
+        <a href="#" class="btn-hamburger "></a>
+      </div>
+
+      <div class="flex f-25">
+        <p>Menu open</p>
+        <a href="#" class="btn-hamburger his-open"></a>
+      </div>
+
+      <div class="flex f-25">
+        <p>Menu disabled</p>
+        <a href="#" class="btn-hamburger disabled"></a>
+      </div>
+
+      <div class="flex f-25">
+        <p>Menu hover actions</p>
+        <a href="#" class="btn-hamburger to-left"></a>
+        <a href="#" class="btn-hamburger to-right"></a>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -214,26 +231,152 @@
     </table>
   </section>
 
-  <section>
-      <header>Login:</header>
-  
-      <div class="login">
-        <h1 class="login-title">Bem vindo!</h1>
-        <p class="login-detail">Inicie sua sessão</p>
-  
-        <label for="user">Usuário</label>
-        <input type="text" name="user">
-  
-        <label for="password">Senha</label>
-        <input type="text" name="password">
-  
-        <input type="checkbox" id="remember" name="remember" checked>
-        <label for="remember">lembrar-me</label>
-  
-        <a href="#" class="login-forgot">Esqueceu a senha?</a>
-  
-        <button class="btn orange login-btn">iniciar sessão</button>
-      </div>
-    </section>
+  <section class="content">
+    <header class="header">Tags:</header>
+    <span class="tag">tag</span>
+    <span class="tag red">tag</span>
+    <span class="tag pink">tag</span>
+    <span class="tag purple">tag</span>
+    <span class="tag blue">tag</span>
+    <span class="tag green">tag</span>
+    <span class="tag yellow">tag</span>
+    <span class="tag orange">Um texto realmente muito longo</span>
+  </section>
+
+  <section class="content">
+    <header class="header">Lists:</header>
+    <h3>HTML Definition List</h3>
+    <dl>
+      <dt>Titulo</dt>
+      <dd>Descição</dd>
+      <dt>Titulo</dt>
+      <dd>Descição</dd>
+    </dl>
+
+    <h3>HTML Unordered Lists (ul) - not defined</h3>
+
+    <h3>HTML Ordered Lists (ol) - not defined</h3>
+  </section>
+
+  <section class="content">
+    <header class="header">Labels:</header>
+    <span class="label">label default</span>
+    <span class="label is-large">label large</span>
+    <span class="label is-medium">label medium</span>
+    <span class="label is-small">label small</span>
+  </section>
+
+  <section class="content">
+    <header class="header">Fields and labels:</header>
+
+    <label for="">Label 01</label>
+    <input type="text" value="field 01">
+
+    <label for="" class="label">Label 02</label>
+    <input type="text" value="field 02" class="field">
+  </section>
+
+  <section class="content">
+    <header class="header">Input Checkbox:</header>
+
+    <input type="checkbox" id="checbox01" name="checkboxbtn">
+    <label for="checbox01">checbox 01</label>
+
+    <input type="checkbox" id="checbox02" name="checkboxbtn">
+    <label for="checbox02">checbox 02</label>
+  </section>
+
+  <section class="content">
+    <header class="header">Input Radio:</header>
+    <input type="radio" id="radio01" name="radiobtn" class="radiobutton">
+    <label for="radio01">radio 01</label>
+
+    <input type="radio" id="radio02" name="radiobtn" class="radiobutton">
+    <label for="radio02">radio 02</label>
+  </section>
+
+
+  <section class="content">
+    <header class="header">Tables:</header>
+    <table>
+      <thead>
+        <tr>
+          <th>Header 01</th>
+          <th>Header 02</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Content 01</td>
+          <td>Content 02</td>
+        </tr>
+        <tr>
+          <td>Content 01</td>
+          <td>Content 02</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Footer content 1</td>
+          <td>Footer content 2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <section class="content">
+    <header class="header">Tabs:</header>
+
+    <div class="tabs-container">
+      <input id="tab1" type="radio" name="tabs" class="tabs-input" checked>
+      <label for="tab1" class="tabs-label">
+        <span class="tabs-title">texto</span>
+      </label>
+
+      <input id="tab2" type="radio" name="tabs" class="tabs-input">
+      <label for="tab2" class="tabs-label">
+        <span class="tabs-title">muito grande</span>
+      </label>
+
+      <input id="tab3" type="radio" name="tabs" class="tabs-input">
+      <label for="tab3" class="tabs-label">
+        <span class="tabs-title">mas muito grande mesmo</span>
+      </label>
+
+      <input id="tab4" type="radio" name="tabs" class="tabs-input">
+      <label for="tab4" class="tabs-label">
+        <span class="tabs-title">absurdamente grande esse texto</span>
+      </label>
+
+      <div id="content1" class="tabs-content">content1</div>
+      <div id="content2" class="tabs-content">content2</div>
+      <div id="content3" class="tabs-content">content3</div>
+      <div id="content4" class="tabs-content">content4</div>
+    </div>
+  </section>
+
+  <section class="content">
+    <header class="header">Login:</header>
+
+    <div class="login">
+      <h1 class="login-title">Bem vindo!</h1>
+      <p class="login-detail">Inicie sua sessão</p>
+
+      <label for="user">Usuário</label>
+      <input type="text" name="user">
+
+      <label for="password">Senha</label>
+      <input type="text" name="password">
+
+      <input type="checkbox" id="remember" name="remember" checked>
+      <label for="remember">lembrar-me</label>
+
+      <a href="#" class="login-forgot">Esqueceu a senha?</a>
+
+      <button class="btn orange login-btn">iniciar sessão</button>
+
+    </div>
+  </section>
 </body>
+
 </html>
