@@ -22,7 +22,7 @@ Clone o repositório instale as dependências e execute o gulp para ter acesso a
 
 ``npm install && gulp fonts && gulp sass-min``
 
-Para ver exemplos de funcionamento execute ``npm server``
+Para ver exemplos de funcionamento execute ``gulp server``
 
 ### Como utilizamos ITCSS
 

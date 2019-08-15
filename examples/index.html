@@ -7,16 +7,18 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="../dist/css/main.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="../dist/css/main.css">
   <link rel="stylesheet" href="./examples/tmp.css">
 </head>
+
 <body>
-  <img src="./examples/img/coda.png">
+  <img src="./examples/img/coda.png" class="coda-logo">
   <h1 class="coda">CODA</h1>
 
-  <section>
-    <header>Typography:</header>
+  <section class="content">
+    <header class="header">Typography:</header>
     <h1>Titulo - h1</h1>
     <h2>Titulo - h2</h2>
     <h3>Titulo - h3</h3>
@@ -25,8 +27,8 @@
     <small>small text</small>
   </section>
 
-  <section>
-    <header>Buttons:</header>
+  <section class="content">
+    <header class="header">Buttons:</header>
 
     <p>Native Buttons</p>
     <button>Button</button>
@@ -59,8 +61,8 @@
     <input class="btn disable" type="button" value="Input Button">
   </section>
 
-  <section>
-    <header>Buttons Flat:</header>
+  <section class="content">
+    <header class="header">Buttons Flat:</header>
     <p>Default Flat Buttons</p>
     <button class="btn-flat">Button</button>
     <input class="btn-flat" type="submit" Value="Input Submit">
@@ -87,9 +89,9 @@
     <input class="btn-flat disabled" type="button" Value="Input Button">
   </section>
 
-  <section>
-    <header>Buttons Icon:</header>
-    <p>Botões por default usam a cor da marca Objective:</p>
+  <section class="content">
+    <header class="header">Buttons Icon:</header>
+    <i>Botões por default usam a cor da marca Objective:</i>
 
     <p>Default Size</p>
     <button class="btn-icon"><i class="fas fa-mug-hot"></i></button>
@@ -120,8 +122,8 @@
     <button class="btn-icon smoke is-extraLarge"><i class="fas fa-mug-hot"></i></button>
   </section>
 
-  <section>
-    <header>Tags:</header>
+  <section class="content">
+    <header class="header">Tags:</header>
     <span class="tag">tag</span>
     <span class="tag red">tag</span>
     <span class="tag pink">tag</span>
@@ -132,9 +134,9 @@
     <span class="tag orange">Um texto realmente muito longo</span>
   </section>
 
-  <section>
-    <header>Lists:</header>
-    <p>HTML Definition List</p>
+  <section class="content">
+    <header class="header">Lists:</header>
+    <h3>HTML Definition List</h3>
     <dl>
       <dt>Titulo</dt>
       <dd>Descição</dd>
@@ -142,22 +144,21 @@
       <dd>Descição</dd>
     </dl>
 
-    <p>HTML Unordered Lists (ul) - no defined</p>
+    <h3>HTML Unordered Lists (ul) - not defined</h3>
 
-    <p>HTML Ordered Lists (ol) - no defined</p>
-
+    <h3>HTML Ordered Lists (ol) - not defined</h3>
   </section>
 
-  <section>
-    <header>Labels:</header>
+  <section class="content">
+    <header class="header">Labels:</header>
     <span class="label">label default</span>
     <span class="label is-large">label large</span>
     <span class="label is-medium">label medium</span>
     <span class="label is-small">label small</span>
   </section>
 
-  <section>
-    <header>Fields and labels:</header>
+  <section class="content">
+    <header class="header">Fields and labels:</header>
 
     <label for="">Label 01</label>
     <input type="text" value="field 01">
@@ -166,8 +167,8 @@
     <input type="text" value="field 02" class="field">
   </section>
 
-  <section>
-    <header>Input Checkbox:</header>
+  <section class="content">
+    <header class="header">Input Checkbox:</header>
 
     <input type="checkbox" id="checbox01" name="checkboxbtn">
     <label for="checbox01">checbox 01</label>
@@ -176,18 +177,18 @@
     <label for="checbox02">checbox 02</label>
   </section>
 
-  <section>
-    <header>Input Radio:</header>
-    <input type="radio" id="radio01" name="radiobtn">
+  <section class="content">
+    <header class="header">Input Radio:</header>
+    <input type="radio" id="radio01" name="radiobtn" class="radiobutton">
     <label for="radio01">radio 01</label>
 
-    <input type="radio" id="radio02" name="radiobtn">
+    <input type="radio" id="radio02" name="radiobtn" class="radiobutton">
     <label for="radio02">radio 02</label>
   </section>
 
 
-  <section>
-    <header>Tables:</header>
+  <section class="content">
+    <header class="header">Tables:</header>
     <table>
       <thead>
         <tr>
@@ -213,5 +214,38 @@
       </tfoot>
     </table>
   </section>
+
+
+  <section class="content">
+    <header class="header">Tabs:</header>
+
+    <div class="tabs-container">
+      <input id="tab1" type="radio" name="tabs" class="tabs-input" checked>
+      <label for="tab1" class="tabs-label">
+        <span class="tabs-title">texto</span>
+      </label>
+
+      <input id="tab2" type="radio" name="tabs" class="tabs-input">
+      <label for="tab2" class="tabs-label">
+        <span class="tabs-title">muito grande</span>
+      </label>
+
+      <input id="tab3" type="radio" name="tabs" class="tabs-input">
+      <label for="tab3" class="tabs-label">
+        <span class="tabs-title">mas muito grande mesmo</span>
+      </label>
+
+      <input id="tab4" type="radio" name="tabs" class="tabs-input">
+      <label for="tab4" class="tabs-label">
+        <span class="tabs-title">absurdamente grande esse texto</span>
+      </label>
+
+      <div id="content1" class="tabs-content">content1</div>
+      <div id="content2" class="tabs-content">content2</div>
+      <div id="content3" class="tabs-content">content3</div>
+      <div id="content4" class="tabs-content">content4</div>
+    </div>
+  </section>
 </body>
+
 </html>

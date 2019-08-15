@@ -16,29 +16,28 @@ const SASS_PATH_DIST = './dist/';
 const FONTS_PATH_SRC = './src/fonts/';
 const FONTS_PATH_DIST = './dist/';
 
+gulp.task('default', ['clean', 'fonts', 'sass', 'sass-min'], function () {});
+
 gulp.task('clean', function () {
   gulp.src(SASS_PATH_DIST + '**/*', { read: false })
     .pipe(clean());
 });
 
-gulp.task('default', ['lint-css', 'sass'], function () {});
-
-gulp.task('lint-css', function () {
-  gulp
-    .src(SASS_PATH_SRC + '**/*.scss')
-    .pipe(gulpStylelint({
-      fix: true,
-      reporters: [
-        {
-          formatter: 'verbose',
-          console: true,
-          save: 'stylelintrc-report.json'
-        }
-      ]
-    }));
+gulp.task('fonts', function () {
+  gulp.src(FONTS_PATH_SRC + 'config/*.list')
+    .pipe(googleWebFonts({
+      fontsDir: 'fonts/',
+      cssDir: 'css/',
+      cssFilename: 'fonts.css'
+    }))
+    .pipe(gulp.dest(FONTS_PATH_DIST));
 });
 
-gulp.task('sass', () => {
+gulp.task('sass:watch', ['sass'], function () {
+  gulp.watch(SASS_PATH_SRC + '**/*.scss', ['sass']);
+});
+
+gulp.task('sass', ['lint-css'], () => {
   gulp.src(SASS_PATH_SRC + 'index.scss')
     .pipe(sourcemaps.init())
     .pipe(
@@ -58,7 +57,7 @@ gulp.task('sass', () => {
     .pipe(gulp.dest(SASS_PATH_DIST + '/css'));
 });
 
-gulp.task('sass-min', () => {
+gulp.task('sass-min', ['lint-css'], () => {
   gulp.src(SASS_PATH_SRC + '/index.scss')
     .pipe(
       autoprefixer({
@@ -77,19 +76,23 @@ gulp.task('sass-min', () => {
     .pipe(gulp.dest(SASS_PATH_DIST + '/css'));
 });
 
-gulp.task('sass:watch', ['clean', 'sass', 'images'], function () {
-  gulp.watch(SASS_PATH_SRC + '/sass/**/*.scss', ['sass']);
+gulp.task('lint-css', function () {
+  gulp
+    .src(SASS_PATH_SRC + '**/*.scss')
+    .pipe(gulpStylelint({
+      fix: true,
+      reporters: [
+        {
+          formatter: 'verbose',
+          console: true,
+          save: 'stylelintrc-report.json'
+        }
+      ]
+    }));
 });
 
-gulp.task('fonts', function () {
-  gulp.src(FONTS_PATH_SRC + 'config/*.list')
-    .pipe(googleWebFonts({
-      fontsDir: 'fonts/',
-      cssDir: 'css/',
-      cssFilename: 'fonts.css'
-    }))
-    .pipe(gulp.dest(FONTS_PATH_DIST));
-});
+
+gulp.task('server:watch', ['server', 'sass:watch'], function () {});
 
 gulp.task('server', function() {
   connect.server({
@@ -102,4 +105,3 @@ gulp.task('images', () => {
     .pipe(imagemin({ verbose: true }))
     .pipe(gulp.dest('./dist/img/'))
 });
-
