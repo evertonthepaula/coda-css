@@ -72,7 +72,7 @@ gulp.task('sass-min', ['lint-css'], () => {
         .on('error', sass.logError)
     )
     .pipe(concat('main.min.css'))
-    .pipe(stripCssComments())
+    .pipe(stripCssComments({preserve: false}))
     .pipe(gulp.dest(SASS_PATH_DIST + '/css'));
 });
 
@@ -90,7 +90,6 @@ gulp.task('lint-css', function () {
       ]
     }));
 });
-
 
 gulp.task('server:watch', ['server', 'sass:watch'], function () {});
 

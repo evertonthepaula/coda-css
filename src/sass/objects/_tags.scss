@@ -8,9 +8,7 @@
   line-height: 24px;
   background: $dark-smoke;
   border-radius: $border-radius;
-
   @include truncate(154px);
-
   @include margin(0, 1);
   @include padding(0, 1);
 
