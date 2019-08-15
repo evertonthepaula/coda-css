@@ -1,0 +1,65 @@
+.tabs {
+  &-container {
+    box-sizing: border-box;
+    width: 100%;
+    background: $snow;
+    border: 1px solid $dark-snow;
+  }
+
+  &-input {
+    display: none;
+  }
+
+  &-content {
+    display: none;
+    margin-top: -2px;
+    background-color: $white;
+    border-top: 1px solid $dark-snow;
+    @include padding(2);
+  }
+
+  &-title {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    @include padding(0, 2);
+    @include truncate(100%);
+  }
+
+  &-label {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 128px;
+    height: 40px;
+    margin: 0 0 -1px -3px;
+    color: $dark-smoke;
+    line-height: 40px;
+    text-align: center;
+    background-color: $snow;
+    border-right: 1px solid $dark-snow;
+    border-bottom: 1px solid $dark-snow;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  &-label:hover {
+    background-color: $dark-snow;
+  }
+
+  &-input:checked + .tabs-label {
+    background-color: $white;
+    border-bottom-color: $white;
+  }
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}

@@ -4,7 +4,7 @@
   "description": "Biblioteca de componenentes CSS",
   "main": "index.js",
   "scripts": {
-    "fix-styles": "stylelint 'src/sass/**/*.scss' --fix",
+    "fix:styles": "stylelint 'src/sass/**/*.scss' --fix",
     "lint:styles": "stylelint 'src/sass/**/*.scss' "
   },
   "author": "",
@@ -46,7 +46,7 @@
   },
   "lint-staged": {
     "*.scss": [
-      "npm run fix-styles",
+      "npm run fix:styles",
       "git add"
     ]
   }
