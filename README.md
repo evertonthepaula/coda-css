@@ -9,19 +9,19 @@ Assim como CODA em uma música o css(em teoria) é a trecho final de um projeto,
 
 para baixar como dependencia do projeto use:
 
-```npm i -S git+ssh://git@gitlab.objective.com.br:everton.paula/coda-css.git```
+```npm i -S git+ssh://github.com/evertonthepaula/coda-css.git```
 
 Carrege usando:
 
-```@import '/node_modules/objective-coda/src/sass/index.scss';```
+```@import '/node_modules/coda/src/sass/index.scss';```
 
 ou
 
-```@import '/node_modules/objective-coda/dist/css/main.css';```
+```@import '/node_modules/coda/dist/css/main.css';```
 
 ou
 
-```@import '/node_modules/objective-coda/dist/css/main.min.css';```
+```@import '/node_modules/coda/dist/css/main.min.css';```
 
 ## Contribuindo com o projeto
 
